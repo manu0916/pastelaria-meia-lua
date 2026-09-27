@@ -43,13 +43,10 @@
         <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
           <a href="#sabores">Sabores</a>
           <a href="#diferenciais">Por que escolher</a>
-          <a href="#pedido">Como pedir</a>
-          <a
-            class="nav-order"
-            href="https://bit.ly/3bXewl4"
-            target="_blank"
-            rel="noreferrer"
-          >Fazer pedido</a>
+          <a href="#pedido">Como funciona</a>
+          <button class="nav-order cart-open" type="button" aria-label="Abrir meu pedido">
+            Meu pedido <span class="cart-count" aria-label="0 itens">0</span>
+          </button>
         </nav>
       </div>
     </header>
@@ -65,9 +62,9 @@
             Pastel douradinho, feito na hora e com aquele recheio que não economiza sabor.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">
-              Pedir pelo WhatsApp
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 14-7-5 14-3-6-6-1Zm6 1 8-8" /></svg>
+            <a class="button button-primary" href="#sabores">
+              Escolher meus pastéis
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" /></svg>
             </a>
             <a class="text-link" href="#sabores">Conhecer os sabores <span aria-hidden="true">↓</span></a>
           </div>
@@ -118,13 +115,13 @@
                 <strong>R$ 4,00</strong>
               </div>
               <ul class="price-list">
-                <li><span>Calabresa</span><b>R$ 4,00</b></li>
-                <li><span>Carne</span><b>R$ 4,00</b></li>
-                <li><span>Frango</span><b>R$ 4,00</b></li>
-                <li><span>Presunto e queijo</span><b>R$ 4,00</b></li>
-                <li><span>Queijo</span><b>R$ 4,00</b></li>
+                <li><span>Calabresa</span><b>R$ 4,00</b><button class="add-item" type="button" data-id="tradicional-calabresa" data-name="Tradicional — Calabresa" data-price="4">Adicionar</button></li>
+                <li><span>Carne</span><b>R$ 4,00</b><button class="add-item" type="button" data-id="tradicional-carne" data-name="Tradicional — Carne" data-price="4">Adicionar</button></li>
+                <li><span>Frango</span><b>R$ 4,00</b><button class="add-item" type="button" data-id="tradicional-frango" data-name="Tradicional — Frango" data-price="4">Adicionar</button></li>
+                <li><span>Presunto e queijo</span><b>R$ 4,00</b><button class="add-item" type="button" data-id="tradicional-presunto-queijo" data-name="Tradicional — Presunto e queijo" data-price="4">Adicionar</button></li>
+                <li><span>Queijo</span><b>R$ 4,00</b><button class="add-item" type="button" data-id="tradicional-queijo" data-name="Tradicional — Queijo" data-price="4">Adicionar</button></li>
               </ul>
-              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+              <button class="category-order cart-open" type="button">Ver meu pedido <span aria-hidden="true">→</span></button>
             </div>
           </article>
 
@@ -136,18 +133,18 @@
                 <strong>R$ 11,00</strong>
               </div>
               <ul class="price-list compact">
-                <li><span>Carne + queijo</span></li>
-                <li><span>Carne + ovo</span></li>
-                <li><span>Carne + catupiry</span></li>
-                <li><span>Carne + bacon</span></li>
-                <li><span>Calabresa + catupiry</span></li>
-                <li><span>Calabresa + cheddar</span></li>
-                <li><span>Calabresa + queijo</span></li>
-                <li><span>Frango + catupiry</span></li>
-                <li><span>Frango + cheddar</span></li>
-                <li><span>Frango + queijo</span></li>
+                <li><span>Carne + queijo</span><button class="add-item" type="button" data-id="unidade-carne-queijo" data-name="Carne + queijo" data-price="11">Adicionar</button></li>
+                <li><span>Carne + ovo</span><button class="add-item" type="button" data-id="unidade-carne-ovo" data-name="Carne + ovo" data-price="11">Adicionar</button></li>
+                <li><span>Carne + catupiry</span><button class="add-item" type="button" data-id="unidade-carne-catupiry" data-name="Carne + catupiry" data-price="11">Adicionar</button></li>
+                <li><span>Carne + bacon</span><button class="add-item" type="button" data-id="unidade-carne-bacon" data-name="Carne + bacon" data-price="11">Adicionar</button></li>
+                <li><span>Calabresa + catupiry</span><button class="add-item" type="button" data-id="unidade-calabresa-catupiry" data-name="Calabresa + catupiry" data-price="11">Adicionar</button></li>
+                <li><span>Calabresa + cheddar</span><button class="add-item" type="button" data-id="unidade-calabresa-cheddar" data-name="Calabresa + cheddar" data-price="11">Adicionar</button></li>
+                <li><span>Calabresa + queijo</span><button class="add-item" type="button" data-id="unidade-calabresa-queijo" data-name="Calabresa + queijo" data-price="11">Adicionar</button></li>
+                <li><span>Frango + catupiry</span><button class="add-item" type="button" data-id="unidade-frango-catupiry" data-name="Frango + catupiry" data-price="11">Adicionar</button></li>
+                <li><span>Frango + cheddar</span><button class="add-item" type="button" data-id="unidade-frango-cheddar" data-name="Frango + cheddar" data-price="11">Adicionar</button></li>
+                <li><span>Frango + queijo</span><button class="add-item" type="button" data-id="unidade-frango-queijo" data-name="Frango + queijo" data-price="11">Adicionar</button></li>
               </ul>
-              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+              <button class="category-order cart-open" type="button">Ver meu pedido <span aria-hidden="true">→</span></button>
             </div>
           </article>
 
@@ -159,19 +156,19 @@
                 <strong>R$ 13,00</strong>
               </div>
               <ul class="price-list compact">
-                <li><span>Queijo, presunto, tomate e catupiry</span></li>
-                <li><span>Queijo prato, cheddar e carne</span></li>
-                <li><span>Carne, queijo, presunto e ovo</span></li>
-                <li><span>Carne, queijo e bacon</span></li>
-                <li><span>Carne, queijo e calabresa</span></li>
-                <li><span>Queijo, presunto, frango e catupiry</span></li>
-                <li><span>Frango, queijo e bacon</span></li>
-                <li><span>Queijo, presunto e carne</span></li>
-                <li><span>Calabresa, queijo e bacon</span></li>
-                <li><span>Cheddar, bacon e queijo</span></li>
-                <li><span>Queijo prato, calabresa e cheddar</span></li>
+                <li><span>Queijo, presunto, tomate e catupiry</span><button class="add-item" type="button" data-id="especial-queijo-presunto-tomate-catupiry" data-name="Especial — Queijo, presunto, tomate e catupiry" data-price="13">Adicionar</button></li>
+                <li><span>Queijo prato, cheddar e carne</span><button class="add-item" type="button" data-id="especial-queijo-cheddar-carne" data-name="Especial — Queijo prato, cheddar e carne" data-price="13">Adicionar</button></li>
+                <li><span>Carne, queijo, presunto e ovo</span><button class="add-item" type="button" data-id="especial-carne-queijo-presunto-ovo" data-name="Especial — Carne, queijo, presunto e ovo" data-price="13">Adicionar</button></li>
+                <li><span>Carne, queijo e bacon</span><button class="add-item" type="button" data-id="especial-carne-queijo-bacon" data-name="Especial — Carne, queijo e bacon" data-price="13">Adicionar</button></li>
+                <li><span>Carne, queijo e calabresa</span><button class="add-item" type="button" data-id="especial-carne-queijo-calabresa" data-name="Especial — Carne, queijo e calabresa" data-price="13">Adicionar</button></li>
+                <li><span>Queijo, presunto, frango e catupiry</span><button class="add-item" type="button" data-id="especial-queijo-presunto-frango-catupiry" data-name="Especial — Queijo, presunto, frango e catupiry" data-price="13">Adicionar</button></li>
+                <li><span>Frango, queijo e bacon</span><button class="add-item" type="button" data-id="especial-frango-queijo-bacon" data-name="Especial — Frango, queijo e bacon" data-price="13">Adicionar</button></li>
+                <li><span>Queijo, presunto e carne</span><button class="add-item" type="button" data-id="especial-queijo-presunto-carne" data-name="Especial — Queijo, presunto e carne" data-price="13">Adicionar</button></li>
+                <li><span>Calabresa, queijo e bacon</span><button class="add-item" type="button" data-id="especial-calabresa-queijo-bacon" data-name="Especial — Calabresa, queijo e bacon" data-price="13">Adicionar</button></li>
+                <li><span>Cheddar, bacon e queijo</span><button class="add-item" type="button" data-id="especial-cheddar-bacon-queijo" data-name="Especial — Cheddar, bacon e queijo" data-price="13">Adicionar</button></li>
+                <li><span>Queijo prato, calabresa e cheddar</span><button class="add-item" type="button" data-id="especial-queijo-calabresa-cheddar" data-name="Especial — Queijo prato, calabresa e cheddar" data-price="13">Adicionar</button></li>
               </ul>
-              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+              <button class="category-order cart-open" type="button">Ver meu pedido <span aria-hidden="true">→</span></button>
             </div>
           </article>
 
@@ -183,12 +180,14 @@
               <div class="signature-item">
                 <div><strong>Meia Lua</strong><b>R$ 20,00</b></div>
                 <p>Carne, frango, queijo, presunto, calabresa, ovo, catupiry, cheddar e bacon.</p>
+                <button class="add-item" type="button" data-id="meia-lua" data-name="Meia Lua" data-price="20">Adicionar ao pedido</button>
               </div>
               <div class="signature-item">
                 <div><strong>Meia Lua 2</strong><b>R$ 27,00</b></div>
                 <p>Carne, frango, queijo, presunto, calabresa, ovo, catupiry, cheddar, bacon, hambúrguer, queijo prato e cream cheese.</p>
+                <button class="add-item" type="button" data-id="meia-lua-2" data-name="Meia Lua 2" data-price="27">Adicionar ao pedido</button>
               </div>
-              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+              <button class="category-order cart-open" type="button">Ver meu pedido <span aria-hidden="true">→</span></button>
             </div>
           </article>
 
@@ -201,12 +200,12 @@
               </div>
               <p class="category-explainer">O nome é Burger, mas todos os itens desta seção são pastéis.</p>
               <ul class="price-list compact">
-                <li><span>Hambúrguer, bacon, ovo, queijo prato e cream cheese</span></li>
-                <li><span>Queijo prato, frango, cream cheese e calabresa</span></li>
-                <li><span>Queijo prato, calabresa, cream cheese e carne</span></li>
-                <li><span>Queijo mussarela, costela bovina e cream cheese</span></li>
+                <li><span>Hambúrguer, bacon, ovo, queijo prato e cream cheese</span><button class="add-item" type="button" data-id="burger-hamburguer-bacon-ovo" data-name="Burger — Hambúrguer, bacon, ovo, queijo prato e cream cheese" data-price="16">Adicionar</button></li>
+                <li><span>Queijo prato, frango, cream cheese e calabresa</span><button class="add-item" type="button" data-id="burger-frango-calabresa" data-name="Burger — Queijo prato, frango, cream cheese e calabresa" data-price="16">Adicionar</button></li>
+                <li><span>Queijo prato, calabresa, cream cheese e carne</span><button class="add-item" type="button" data-id="burger-calabresa-carne" data-name="Burger — Queijo prato, calabresa, cream cheese e carne" data-price="16">Adicionar</button></li>
+                <li><span>Queijo mussarela, costela bovina e cream cheese</span><button class="add-item" type="button" data-id="burger-costela" data-name="Burger — Queijo mussarela, costela bovina e cream cheese" data-price="16">Adicionar</button></li>
               </ul>
-              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+              <button class="category-order cart-open" type="button">Ver meu pedido <span aria-hidden="true">→</span></button>
             </div>
           </article>
 
@@ -218,12 +217,13 @@
                 <strong>R$ 9,00</strong>
               </div>
               <p class="category-explainer">Doce de leite cremoso com queijo derretido dentro da massa crocante.</p>
-              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+              <button class="add-item wide-add" type="button" data-id="doce-leite-queijo" data-name="Doce de leite com queijo" data-price="9">Adicionar ao pedido</button>
+              <button class="category-order cart-open" type="button">Ver meu pedido <span aria-hidden="true">→</span></button>
             </div>
           </article>
         </div>
 
-        <p class="menu-note reveal">Valores e sabores transcritos do cardápio da Pastelaria Meia Lua. Consulte disponibilidade pelo WhatsApp.</p>
+        <p class="menu-note reveal">Adicione os sabores, ajuste as quantidades no carrinho e finalize sem sair do site.</p>
       </section>
 
       <section class="quality-section" id="diferenciais" aria-labelledby="quality-title">
@@ -252,18 +252,18 @@
         <div class="steps">
           <article class="step reveal">
             <span>1</span>
-            <h3>Chame no WhatsApp</h3>
-            <p>Abra a conversa e veja o cardápio completo do dia.</p>
+            <h3>Escolha no cardápio</h3>
+            <p>Toque em “Adicionar” nos sabores que deseja.</p>
           </article>
           <article class="step reveal">
             <span>2</span>
-            <h3>Escolha seus sabores</h3>
-            <p>Monte o pedido com os pastéis que mais combinam com você.</p>
+            <h3>Revise seu pedido</h3>
+            <p>Ajuste quantidades e confira o valor antes de continuar.</p>
           </article>
           <article class="step reveal">
             <span>3</span>
-            <h3>Receba quentinho</h3>
-            <p>Confirme o endereço e deixe o restante com a gente.</p>
+            <h3>Finalize no site</h3>
+            <p>Informe entrega e pagamento para confirmar a compra.</p>
           </article>
         </div>
       </section>
@@ -273,9 +273,9 @@
         <div class="final-cta-copy reveal">
           <p class="eyebrow">BATEU A FOME?</p>
           <h2 id="cta-title">Hoje tem<br /><em>Meia Lua.</em></h2>
-          <a class="button button-light" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">
-            Fazer meu pedido
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 14-7-5 14-3-6-6-1Zm6 1 8-8" /></svg>
+          <a class="button button-light" href="#sabores">
+            Escolher agora
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" /></svg>
           </a>
         </div>
         <p class="cta-outline" aria-hidden="true">PASTELARIA</p>
@@ -296,7 +296,82 @@
       <p>© <span id="year"></span> Pastelaria Meia Lua</p>
     </footer>
 
-    <a class="mobile-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Pedir pelo WhatsApp <span aria-hidden="true">↗</span></a>
+    <button class="mobile-order cart-open" type="button">
+      <span>Ver meu pedido</span>
+      <strong><span class="cart-count">0</span> itens · <span class="cart-total">R$ 0,00</span></strong>
+    </button>
+
+    <div class="panel-backdrop" data-close-cart hidden></div>
+    <aside class="cart-panel" aria-labelledby="cart-title" aria-hidden="true">
+      <div class="cart-header">
+        <div>
+          <p class="card-kicker">SEU CARRINHO</p>
+          <h2 id="cart-title">Meu pedido</h2>
+        </div>
+        <button class="icon-button" type="button" data-close-cart aria-label="Fechar carrinho">×</button>
+      </div>
+      <div class="cart-items" aria-live="polite"></div>
+      <div class="cart-empty">
+        <span aria-hidden="true">◐</span>
+        <h3>Seu pedido está vazio</h3>
+        <p>Escolha seus pastéis favoritos no cardápio.</p>
+        <button class="secondary-action" type="button" data-close-cart>Ver cardápio</button>
+      </div>
+      <div class="cart-summary" hidden>
+        <div><span>Subtotal</span><strong class="cart-total">R$ 0,00</strong></div>
+        <small>A taxa de entrega é informada na confirmação.</small>
+        <button class="checkout-button" type="button" data-open-checkout>Continuar para entrega <span aria-hidden="true">→</span></button>
+      </div>
+    </aside>
+
+    <section class="checkout-modal" aria-labelledby="checkout-title" aria-hidden="true" hidden>
+      <div class="checkout-dialog" role="dialog" aria-modal="true">
+        <button class="icon-button checkout-close" type="button" data-close-checkout aria-label="Fechar finalização">×</button>
+        <div class="checkout-form-view">
+          <p class="card-kicker">ÚLTIMA ETAPA</p>
+          <h2 id="checkout-title">Finalizar pedido</h2>
+          <p class="checkout-intro">Preencha os dados para confirmar sem sair do site.</p>
+          <form id="checkout-form">
+            <div class="form-grid">
+              <label>Nome completo<input name="name" autocomplete="name" required /></label>
+              <label>Telefone<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(35) 99999-9999" required /></label>
+            </div>
+            <fieldset>
+              <legend>Como deseja receber?</legend>
+              <div class="choice-row">
+                <label><input type="radio" name="delivery" value="Entrega" checked /> Entrega</label>
+                <label><input type="radio" name="delivery" value="Retirada" /> Retirada</label>
+              </div>
+            </fieldset>
+            <div class="address-fields">
+              <label>Endereço de entrega<input name="address" autocomplete="street-address" placeholder="Rua, número e bairro" required /></label>
+              <label>Complemento<input name="complement" autocomplete="address-line2" placeholder="Apto, referência..." /></label>
+            </div>
+            <fieldset>
+              <legend>Forma de pagamento</legend>
+              <div class="choice-row payment-choices">
+                <label><input type="radio" name="payment" value="Pix" checked /> Pix</label>
+                <label><input type="radio" name="payment" value="Cartão na entrega" /> Cartão</label>
+                <label><input type="radio" name="payment" value="Dinheiro" /> Dinheiro</label>
+              </div>
+            </fieldset>
+            <label>Observações<textarea name="notes" rows="3" placeholder="Ex.: sem cebola, troco para R$ 50..."></textarea></label>
+            <div class="checkout-total"><span>Total dos itens</span><strong class="cart-total">R$ 0,00</strong></div>
+            <button class="checkout-button" type="submit">Confirmar pedido <span aria-hidden="true">→</span></button>
+            <small class="demo-notice">Demonstração do sistema de pedidos. Nenhuma cobrança será realizada.</small>
+          </form>
+        </div>
+        <div class="checkout-success" hidden>
+          <span class="success-mark" aria-hidden="true">✓</span>
+          <p class="card-kicker">PEDIDO CONFIRMADO</p>
+          <h2>Tudo certo!</h2>
+          <p>Seu pedido <strong class="order-number"></strong> foi registrado nesta demonstração.</p>
+          <button class="checkout-button" type="button" data-new-order>Fazer novo pedido</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="toast" role="status" aria-live="polite" aria-hidden="true">Pastel adicionado ao pedido</div>
 
     <script src="script.js"></script>
   </body>
