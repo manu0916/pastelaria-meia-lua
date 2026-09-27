@@ -16,7 +16,7 @@ siteNav?.querySelectorAll('a').forEach((link) => {
 });
 
 const filters = document.querySelectorAll('.filter');
-const cards = document.querySelectorAll('.menu-card');
+const cards = document.querySelectorAll('.menu-category-card');
 
 filters.forEach((filter) => {
   filter.addEventListener('click', () => {

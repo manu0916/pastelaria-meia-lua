@@ -14,7 +14,7 @@
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23f39218'/%3E%3Cpath d='M43 13a23 23 0 1 0 8 38A25 25 0 0 1 43 13Z' fill='%23fff7e8'/%3E%3C/svg%3E"
     />
-    <link rel="preload" href="assets/pasteis-hero.png" as="image" />
+    <link rel="preload" href="assets/pasteis-hero.webp" as="image" type="image/webp" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -98,67 +98,132 @@
             <p class="eyebrow dark">ESCOLHA O SEU</p>
             <h2 id="menu-title">Qual vai ser o<br /><em>seu pastel de hoje?</em></h2>
           </div>
-          <div class="filters" aria-label="Filtrar sabores">
+          <div class="filters" aria-label="Filtrar cardápio">
             <button class="filter is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
-            <button class="filter" type="button" data-filter="salgado" aria-pressed="false">Salgados</button>
-            <button class="filter" type="button" data-filter="doce" aria-pressed="false">Doces</button>
+            <button class="filter" type="button" data-filter="tradicional" aria-pressed="false">Tradicionais</button>
+            <button class="filter" type="button" data-filter="unidade" aria-pressed="false">Unidade</button>
+            <button class="filter" type="button" data-filter="especial" aria-pressed="false">Especiais</button>
+            <button class="filter" type="button" data-filter="meia-lua" aria-pressed="false">Meia Lua</button>
+            <button class="filter" type="button" data-filter="burger" aria-pressed="false">Burger</button>
+            <button class="filter" type="button" data-filter="doce" aria-pressed="false">Doce</button>
           </div>
         </div>
 
         <div class="menu-grid">
-          <article class="menu-card feature-card reveal" data-category="salgado">
-            <div class="feature-image" role="img" aria-label="Pastel crocante recheado com carne e queijo"></div>
-            <div class="feature-card-copy">
-              <span class="card-number">01</span>
-              <p class="card-kicker">O QUERIDINHO</p>
-              <h3>Carne<br />com queijo</h3>
-              <p>Carne bem temperada e queijo derretendo a cada mordida.</p>
-              <a href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Quero esse <span aria-hidden="true">↗</span></a>
+          <article class="menu-category-card reveal" data-category="tradicional">
+            <img src="assets/pastel-tradicional.webp" alt="Pastéis tradicionais de carne, queijo e calabresa" loading="lazy" width="1200" height="1200" />
+            <div class="category-content">
+              <div class="category-heading">
+                <div><p class="card-kicker">PASTEL TRADICIONAL</p><h3>Os clássicos</h3></div>
+                <strong>R$ 4,00</strong>
+              </div>
+              <ul class="price-list">
+                <li><span>Calabresa</span><b>R$ 4,00</b></li>
+                <li><span>Carne</span><b>R$ 4,00</b></li>
+                <li><span>Frango</span><b>R$ 4,00</b></li>
+                <li><span>Presunto e queijo</span><b>R$ 4,00</b></li>
+                <li><span>Queijo</span><b>R$ 4,00</b></li>
+              </ul>
+              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
             </div>
           </article>
 
-          <article class="menu-card reveal" data-category="salgado">
-            <span class="card-number">02</span>
-            <p class="card-kicker">CREMOSO</p>
-            <h3>Frango<br />especial</h3>
-            <p>Frango desfiado, tempero da casa e cremosidade na medida.</p>
-            <a href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Pedir agora <span aria-hidden="true">↗</span></a>
+          <article class="menu-category-card reveal" data-category="unidade">
+            <img src="assets/pastel-unidade.webp" alt="Pastel recheado de carne com queijo e pastel de frango" loading="lazy" width="1200" height="1200" />
+            <div class="category-content">
+              <div class="category-heading">
+                <div><p class="card-kicker">CARDÁPIO UNIDADE</p><h3>Mais recheio</h3></div>
+                <strong>R$ 11,00</strong>
+              </div>
+              <ul class="price-list compact">
+                <li><span>Carne + queijo</span></li>
+                <li><span>Carne + ovo</span></li>
+                <li><span>Carne + catupiry</span></li>
+                <li><span>Carne + bacon</span></li>
+                <li><span>Calabresa + catupiry</span></li>
+                <li><span>Calabresa + cheddar</span></li>
+                <li><span>Calabresa + queijo</span></li>
+                <li><span>Frango + catupiry</span></li>
+                <li><span>Frango + cheddar</span></li>
+                <li><span>Frango + queijo</span></li>
+              </ul>
+              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+            </div>
           </article>
 
-          <article class="menu-card orange reveal" data-category="salgado">
-            <span class="card-number">03</span>
-            <p class="card-kicker">CLÁSSICO</p>
-            <h3>Pizza<br />da casa</h3>
-            <p>Queijo, presunto, tomate e orégano no recheio que todo mundo ama.</p>
-            <a href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Pedir agora <span aria-hidden="true">↗</span></a>
+          <article class="menu-category-card reveal" data-category="especial">
+            <img src="assets/pastel-especial.webp" alt="Pastel especial recheado com carne, queijo, bacon e calabresa" loading="lazy" width="1200" height="1200" />
+            <div class="category-content">
+              <div class="category-heading">
+                <div><p class="card-kicker">PASTÉIS ESPECIAIS</p><h3>Combinações especiais</h3></div>
+                <strong>R$ 13,00</strong>
+              </div>
+              <ul class="price-list compact">
+                <li><span>Queijo, presunto, tomate e catupiry</span></li>
+                <li><span>Queijo prato, cheddar e carne</span></li>
+                <li><span>Carne, queijo, presunto e ovo</span></li>
+                <li><span>Carne, queijo e bacon</span></li>
+                <li><span>Carne, queijo e calabresa</span></li>
+                <li><span>Queijo, presunto, frango e catupiry</span></li>
+                <li><span>Frango, queijo e bacon</span></li>
+                <li><span>Queijo, presunto e carne</span></li>
+                <li><span>Calabresa, queijo e bacon</span></li>
+                <li><span>Cheddar, bacon e queijo</span></li>
+                <li><span>Queijo prato, calabresa e cheddar</span></li>
+              </ul>
+              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+            </div>
           </article>
 
-          <article class="menu-card reveal" data-category="salgado">
-            <span class="card-number">04</span>
-            <p class="card-kicker">SEM ERRO</p>
-            <h3>Queijo<br />derretido</h3>
-            <p>Casquinha sequinha por fora e muito queijo por dentro.</p>
-            <a href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Pedir agora <span aria-hidden="true">↗</span></a>
+          <article class="menu-category-card signature-card reveal" data-category="meia-lua">
+            <img src="assets/pastel-meia-lua.webp" alt="Pastel Meia Lua grande com vários recheios" loading="lazy" width="1200" height="1200" />
+            <div class="category-content">
+              <p class="card-kicker">ESPECIALIDADES DA CASA</p>
+              <h3>Meia Lua</h3>
+              <div class="signature-item">
+                <div><strong>Meia Lua</strong><b>R$ 20,00</b></div>
+                <p>Carne, frango, queijo, presunto, calabresa, ovo, catupiry, cheddar e bacon.</p>
+              </div>
+              <div class="signature-item">
+                <div><strong>Meia Lua 2</strong><b>R$ 27,00</b></div>
+                <p>Carne, frango, queijo, presunto, calabresa, ovo, catupiry, cheddar, bacon, hambúrguer, queijo prato e cream cheese.</p>
+              </div>
+              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+            </div>
           </article>
 
-          <article class="menu-card brown reveal" data-category="doce">
-            <span class="card-number">05</span>
-            <p class="card-kicker">DOCE NA MEDIDA</p>
-            <h3>Chocolate<br />crocante</h3>
-            <p>Chocolate quentinho envolvido pela massa leve e crocante.</p>
-            <a href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Pedir agora <span aria-hidden="true">↗</span></a>
+          <article class="menu-category-card dark-card reveal" data-category="burger">
+            <img src="assets/pastel-burger.webp" alt="Pastel recheado com hambúrguer, bacon, ovo e queijo" loading="lazy" width="1200" height="1200" />
+            <div class="category-content">
+              <div class="category-heading">
+                <div><p class="card-kicker">PASTÉIS BURGER</p><h3>Recheio de burger</h3></div>
+                <strong>R$ 16,00</strong>
+              </div>
+              <p class="category-explainer">O nome é Burger, mas todos os itens desta seção são pastéis.</p>
+              <ul class="price-list compact">
+                <li><span>Hambúrguer, bacon, ovo, queijo prato e cream cheese</span></li>
+                <li><span>Queijo prato, frango, cream cheese e calabresa</span></li>
+                <li><span>Queijo prato, calabresa, cream cheese e carne</span></li>
+                <li><span>Queijo mussarela, costela bovina e cream cheese</span></li>
+              </ul>
+              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+            </div>
           </article>
 
-          <article class="menu-card reveal" data-category="doce">
-            <span class="card-number">06</span>
-            <p class="card-kicker">CHEIRO DE CASA</p>
-            <h3>Banana<br />com canela</h3>
-            <p>Banana macia, açúcar e canela para terminar o pedido do melhor jeito.</p>
-            <a href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Pedir agora <span aria-hidden="true">↗</span></a>
+          <article class="menu-category-card sweet-card reveal" data-category="doce">
+            <img src="assets/pastel-doce.webp" alt="Pastel doce recheado com doce de leite e queijo" loading="lazy" width="1200" height="1200" />
+            <div class="category-content">
+              <div class="category-heading">
+                <div><p class="card-kicker">PASTEL DOCE</p><h3>Doce de leite com queijo</h3></div>
+                <strong>R$ 9,00</strong>
+              </div>
+              <p class="category-explainer">Doce de leite cremoso com queijo derretido dentro da massa crocante.</p>
+              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+            </div>
           </article>
         </div>
 
-        <p class="menu-note reveal">Consulte todos os sabores, adicionais e disponibilidade pelo WhatsApp.</p>
+        <p class="menu-note reveal">Valores e sabores transcritos do cardápio da Pastelaria Meia Lua. Consulte disponibilidade pelo WhatsApp.</p>
       </section>
 
       <section class="quality-section" id="diferenciais" aria-labelledby="quality-title">
