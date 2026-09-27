@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pastelaria Meia Lua — pastéis crocantes, bem recheados e entregues na cidade toda."
+    />
+    <meta name="theme-color" content="#1f120c" />
+    <title>Pastelaria Meia Lua | O sabor que conquista</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23f39218'/%3E%3Cpath d='M43 13a23 23 0 1 0 8 38A25 25 0 0 1 43 13Z' fill='%23fff7e8'/%3E%3C/svg%3E"
+    />
+    <link rel="preload" href="assets/pasteis-hero.webp" as="image" type="image/webp" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" id="inicio">
+      <div class="header-inner">
+        <a class="brand" href="#inicio" aria-label="Pastelaria Meia Lua — início">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img">
+              <circle cx="24" cy="24" r="22" fill="currentColor" />
+              <path d="M28.5 9.5A16.5 16.5 0 1 0 39 37.7 18 18 0 0 1 28.5 9.5Z" fill="#fff8eb" />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <strong>Pastelaria</strong>
+            <span>Meia Lua</span>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Abrir menu</span>
+          <span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+          <a href="#sabores">Sabores</a>
+          <a href="#diferenciais">Por que escolher</a>
+          <a href="#pedido">Como pedir</a>
+          <a
+            class="nav-order"
+            href="https://bit.ly/3bXewl4"
+            target="_blank"
+            rel="noreferrer"
+          >Fazer pedido</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">PASTELARIA MEIA LUA</p>
+          <h1 id="hero-title">Crocante por fora.<br /><em>Recheio de verdade</em> por dentro.</h1>
+          <p class="hero-text">
+            Pastel douradinho, feito na hora e com aquele recheio que não economiza sabor.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">
+              Pedir pelo WhatsApp
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 14-7-5 14-3-6-6-1Zm6 1 8-8" /></svg>
+            </a>
+            <a class="text-link" href="#sabores">Conhecer os sabores <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-stamp" aria-hidden="true">
+          <span>FEITO</span><strong>NA HORA</strong><span>TODO DIA</span>
+        </div>
+      </section>
+
+      <section class="quick-info" aria-label="Informações rápidas">
+        <div class="quick-item">
+          <span class="quick-icon" aria-hidden="true">01</span>
+          <div><strong>Entregas na cidade toda</strong><small>Peça sem sair de casa</small></div>
+        </div>
+        <div class="quick-item">
+          <span class="quick-icon" aria-hidden="true">02</span>
+          <div><strong>Pedidos a partir das 17h</strong><small>Chame e consulte o atendimento</small></div>
+        </div>
+        <div class="quick-item">
+          <span class="quick-icon" aria-hidden="true">03</span>
+          <div><strong>Frito na hora</strong><small>Quentinho e crocante</small></div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="sabores" aria-labelledby="menu-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow dark">ESCOLHA O SEU</p>
+            <h2 id="menu-title">Qual vai ser o<br /><em>seu pastel de hoje?</em></h2>
+          </div>
+          <div class="filters" aria-label="Filtrar cardápio">
+            <button class="filter is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+            <button class="filter" type="button" data-filter="tradicional" aria-pressed="false">Tradicionais</button>
+            <button class="filter" type="button" data-filter="unidade" aria-pressed="false">Unidade</button>
+            <button class="filter" type="button" data-filter="especial" aria-pressed="false">Especiais</button>
+            <button class="filter" type="button" data-filter="meia-lua" aria-pressed="false">Meia Lua</button>
+            <button class="filter" type="button" data-filter="burger" aria-pressed="false">Burger</button>
+            <button class="filter" type="button" data-filter="doce" aria-pressed="false">Doce</button>
+          </div>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-category-card reveal" data-category="tradicional">
+            <img src="assets/pastel-tradicional.webp" alt="Pastéis tradicionais de carne, queijo e calabresa" loading="lazy" width="1200" height="1200" />
+            <div class="category-content">
+              <div class="category-heading">
+                <div><p class="card-kicker">PASTEL TRADICIONAL</p><h3>Os clássicos</h3></div>
+                <strong>R$ 4,00</strong>
+              </div>
+              <ul class="price-list">
+                <li><span>Calabresa</span><b>R$ 4,00</b></li>
+                <li><span>Carne</span><b>R$ 4,00</b></li>
+                <li><span>Frango</span><b>R$ 4,00</b></li>
+                <li><span>Presunto e queijo</span><b>R$ 4,00</b></li>
+                <li><span>Queijo</span><b>R$ 4,00</b></li>
+              </ul>
+              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="menu-category-card reveal" data-category="unidade">
+            <img src="assets/pastel-unidade.webp" alt="Pastel recheado de carne com queijo e pastel de frango" loading="lazy" width="1200" height="1200" />
+            <div class="category-content">
+              <div class="category-heading">
+                <div><p class="card-kicker">CARDÁPIO UNIDADE</p><h3>Mais recheio</h3></div>
+                <strong>R$ 11,00</strong>
+              </div>
+              <ul class="price-list compact">
+                <li><span>Carne + queijo</span></li>
+                <li><span>Carne + ovo</span></li>
+                <li><span>Carne + catupiry</span></li>
+                <li><span>Carne + bacon</span></li>
+                <li><span>Calabresa + catupiry</span></li>
+                <li><span>Calabresa + cheddar</span></li>
+                <li><span>Calabresa + queijo</span></li>
+                <li><span>Frango + catupiry</span></li>
+                <li><span>Frango + cheddar</span></li>
+                <li><span>Frango + queijo</span></li>
+              </ul>
+              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="menu-category-card reveal" data-category="especial">
+            <img src="assets/pastel-especial.webp" alt="Pastel especial recheado com carne, queijo, bacon e calabresa" loading="lazy" width="1200" height="1200" />
+            <div class="category-content">
+              <div class="category-heading">
+                <div><p class="card-kicker">PASTÉIS ESPECIAIS</p><h3>Combinações especiais</h3></div>
+                <strong>R$ 13,00</strong>
+              </div>
+              <ul class="price-list compact">
+                <li><span>Queijo, presunto, tomate e catupiry</span></li>
+                <li><span>Queijo prato, cheddar e carne</span></li>
+                <li><span>Carne, queijo, presunto e ovo</span></li>
+                <li><span>Carne, queijo e bacon</span></li>
+                <li><span>Carne, queijo e calabresa</span></li>
+                <li><span>Queijo, presunto, frango e catupiry</span></li>
+                <li><span>Frango, queijo e bacon</span></li>
+                <li><span>Queijo, presunto e carne</span></li>
+                <li><span>Calabresa, queijo e bacon</span></li>
+                <li><span>Cheddar, bacon e queijo</span></li>
+                <li><span>Queijo prato, calabresa e cheddar</span></li>
+              </ul>
+              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="menu-category-card signature-card reveal" data-category="meia-lua">
+            <img src="assets/pastel-meia-lua.webp" alt="Pastel Meia Lua grande com vários recheios" loading="lazy" width="1200" height="1200" />
+            <div class="category-content">
+              <p class="card-kicker">ESPECIALIDADES DA CASA</p>
+              <h3>Meia Lua</h3>
+              <div class="signature-item">
+                <div><strong>Meia Lua</strong><b>R$ 20,00</b></div>
+                <p>Carne, frango, queijo, presunto, calabresa, ovo, catupiry, cheddar e bacon.</p>
+              </div>
+              <div class="signature-item">
+                <div><strong>Meia Lua 2</strong><b>R$ 27,00</b></div>
+                <p>Carne, frango, queijo, presunto, calabresa, ovo, catupiry, cheddar, bacon, hambúrguer, queijo prato e cream cheese.</p>
+              </div>
+              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="menu-category-card dark-card reveal" data-category="burger">
+            <img src="assets/pastel-burger.webp" alt="Pastel recheado com hambúrguer, bacon, ovo e queijo" loading="lazy" width="1200" height="1200" />
+            <div class="category-content">
+              <div class="category-heading">
+                <div><p class="card-kicker">PASTÉIS BURGER</p><h3>Recheio de burger</h3></div>
+                <strong>R$ 16,00</strong>
+              </div>
+              <p class="category-explainer">O nome é Burger, mas todos os itens desta seção são pastéis.</p>
+              <ul class="price-list compact">
+                <li><span>Hambúrguer, bacon, ovo, queijo prato e cream cheese</span></li>
+                <li><span>Queijo prato, frango, cream cheese e calabresa</span></li>
+                <li><span>Queijo prato, calabresa, cream cheese e carne</span></li>
+                <li><span>Queijo mussarela, costela bovina e cream cheese</span></li>
+              </ul>
+              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="menu-category-card sweet-card reveal" data-category="doce">
+            <img src="assets/pastel-doce.webp" alt="Pastel doce recheado com doce de leite e queijo" loading="lazy" width="1200" height="1200" />
+            <div class="category-content">
+              <div class="category-heading">
+                <div><p class="card-kicker">PASTEL DOCE</p><h3>Doce de leite com queijo</h3></div>
+                <strong>R$ 9,00</strong>
+              </div>
+              <p class="category-explainer">Doce de leite cremoso com queijo derretido dentro da massa crocante.</p>
+              <a class="category-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Fazer pedido <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <p class="menu-note reveal">Valores e sabores transcritos do cardápio da Pastelaria Meia Lua. Consulte disponibilidade pelo WhatsApp.</p>
+      </section>
+
+      <section class="quality-section" id="diferenciais" aria-labelledby="quality-title">
+        <div class="quality-image reveal" role="img" aria-label="Pastéis dourados servidos sobre uma bancada de madeira">
+          <span class="quality-label">crocância de verdade</span>
+        </div>
+        <div class="quality-copy reveal">
+          <p class="eyebrow">DA PRIMEIRA À ÚLTIMA MORDIDA</p>
+          <h2 id="quality-title">Pastel do jeito<br /><em>que tem que ser.</em></h2>
+          <p>
+            Massa leve, recheio caprichado e preparo na hora. Uma combinação simples — quando cada detalhe é bem feito.
+          </p>
+          <ul>
+            <li><span>01</span> Massa crocante e sequinha</li>
+            <li><span>02</span> Recheio generoso</li>
+            <li><span>03</span> Entrega com agilidade</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="order-section" id="pedido" aria-labelledby="order-title">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow dark">FÁCIL E RÁPIDO</p>
+          <h2 id="order-title">Seu pastel em <em>três passos</em></h2>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <span>1</span>
+            <h3>Chame no WhatsApp</h3>
+            <p>Abra a conversa e veja o cardápio completo do dia.</p>
+          </article>
+          <article class="step reveal">
+            <span>2</span>
+            <h3>Escolha seus sabores</h3>
+            <p>Monte o pedido com os pastéis que mais combinam com você.</p>
+          </article>
+          <article class="step reveal">
+            <span>3</span>
+            <h3>Receba quentinho</h3>
+            <p>Confirme o endereço e deixe o restante com a gente.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="cta-title">
+        <div class="cta-moon" aria-hidden="true"></div>
+        <div class="final-cta-copy reveal">
+          <p class="eyebrow">BATEU A FOME?</p>
+          <h2 id="cta-title">Hoje tem<br /><em>Meia Lua.</em></h2>
+          <a class="button button-light" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">
+            Fazer meu pedido
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 14-7-5 14-3-6-6-1Zm6 1 8-8" /></svg>
+          </a>
+        </div>
+        <p class="cta-outline" aria-hidden="true">PASTELARIA</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="currentColor" /><path d="M28.5 9.5A16.5 16.5 0 1 0 39 37.7 18 18 0 0 1 28.5 9.5Z" fill="#fff8eb" /></svg>
+        </span>
+        <span class="brand-copy"><strong>Pastelaria</strong><span>Meia Lua</span></span>
+      </a>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/pastelaria_meialua" target="_blank" rel="noreferrer">Instagram ↗</a>
+        <a href="tel:+5535984275361">(35) 98427-5361</a>
+      </div>
+      <p>© <span id="year"></span> Pastelaria Meia Lua</p>
+    </footer>
+
+    <a class="mobile-order" href="https://bit.ly/3bXewl4" target="_blank" rel="noreferrer">Pedir pelo WhatsApp <span aria-hidden="true">↗</span></a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
